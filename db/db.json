@@ -1,12 +1,7 @@
 [
     {
-        "title": "New Note #7",
-        "text": "This is a new Note",
-        "id": "3e024f5e-4c63-4bca-952d-f720e088231b"
-    },
-    {
-        "title": "This is new Note #8",
-        "text": "Testing new note #8",
-        "id": "2f36dfa7-38f3-4460-a356-41ba42596acf"
+        "title": "This is note #1",
+        "text": "New note #1",
+        "id": "ddcb524a-291e-445f-99c0-cf43c14a7b45"
     }
 ]

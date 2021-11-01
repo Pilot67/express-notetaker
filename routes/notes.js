@@ -8,7 +8,7 @@ const writeToFile = util.promisify(fs.writeFile);
 // const { readFromFile, readAndAppend } = require('../helpers/fsUtils');
 // const uuid = require('../helpers/uuid');
 
-// GET Route for retrieving all the tips
+// GET Route for retrieving all the notes
 notes.get('/', (req, res) => {
   console.info(`${req.method} request received for notes`);
   readFromFile('./db/db.json','utf8')
@@ -16,7 +16,7 @@ notes.get('/', (req, res) => {
   .catch((error) => console.log(error));
 });
 
-
+// POST route to save a new note
 notes.post('/', (req, res) => {
     if(req.body) {
         readFromFile('./db/db.json','utf8')
@@ -48,5 +48,28 @@ notes.post('/', (req, res) => {
     }
 });
 
+notes.delete('/:noteId',(req, res) => {
+    const noteId = req.params.noteId;
+    console.log("DeleteNote request")
+    console.log(noteId)
+    readFromFile('./db/db.json','utf8')
+    .then((data) => JSON.parse(data))
+    .then((data) => {
+        const newArr = data.filter((delNote) => delNote.id !== noteId)
+        writeToFile('./db/db.json', JSON.stringify(newArr, null, 4))
+        .then(() => {
+            console.log("success writing new file")
+            res.json(`Note deleted from note database`);
+        })
+        .catch((error) => {
+            console.log(error)
+            res.send(error);
+        })
+    })
+    .catch((error) => {
+        console.log(error);
+    });    
+
+});
 
 module.exports = notes;
