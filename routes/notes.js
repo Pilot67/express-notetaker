@@ -6,7 +6,6 @@ const readFromFile = util.promisify(fs.readFile);
 const writeToFile = util.promisify(fs.writeFile);
 
 // const { readFromFile, readAndAppend } = require('../helpers/fsUtils');
-// const uuid = require('../helpers/uuid');
 
 // GET Route for retrieving all the notes
 notes.get('/', (req, res) => {
@@ -27,8 +26,6 @@ notes.post('/', (req, res) => {
                 text,
                 id: uuid()
             }
-            //const id = {id: uuid()};
-            //req.body.push(id);
             console.log(newNote);
             const parsedData = JSON.parse(data);
             parsedData.push(newNote);
