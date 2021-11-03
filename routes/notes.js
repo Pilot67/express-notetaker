@@ -2,7 +2,6 @@ const fspromises = require('fs/promises');
 const util = require('util');
 const {v4: uuid} = require('uuid');
 const notes = require('express').Router();
-const {readFromFile} = require('../utils/frs')
 // GET Route for retrieving all the notes
 notes.get('/', (req, res) => {
   console.info(`${req.method} request received for notes`);
