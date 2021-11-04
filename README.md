@@ -22,6 +22,7 @@
 
 ## Description  
 A simple note taker showcasing a backend app retrieving and storing data to a file utilising express.js.  
+The app uses routing in the backend along with GET, PUT, DELETE from html/js to store and retrieve the data.
 
 <br>
 <p align="right">(<a href="#top">back to top</a>)</p>
