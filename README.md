@@ -40,9 +40,13 @@ The app requires the following items to be installed:
 ## Usage
 The app is deployed on Heroku.com, please see the [links](#links) section.  
 You will initially be presented with a splash screen and a 'Get Started' button to enter Note Taker, once you click on the button the Note Taker screen will be displayed. The default display opens with a new blank note displayed and any existing notes displayed in the left had column with a 'bin' icon to delete the note.  
+![SplashScreen](https://user-images.githubusercontent.com/86697483/140243624-48db3c3c-9fb2-476b-a483-31e9d091b777.png)  
 Clicking on any note in the column will display the note title and contents on the main pane.  
-The '+' icon located on the top right will allow you to enter a new note. You MUST enter a title and body to be able to save a new note. A 'save' icon will display on the top right onve you have entered a the title and body.  
 Click on the 'bin' icon to delete an existing note.  
+The '+' icon located on the top right will allow you to enter a new note. You MUST enter a title and body to be able to save a new note.  
+![Note-Lifeline](https://user-images.githubusercontent.com/86697483/140243679-ebc4a16e-d67f-422e-a0c2-6073abc537a7.png)  
+The 'save' icon will display on the top right onve you have entered a the title and body.  
+![noteSave](https://user-images.githubusercontent.com/86697483/140243698-e6ed3b7b-e08c-4404-ba81-ab26183836b0.png)  
 
 <br>
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -60,15 +64,16 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTH
   
 ## Contributing
 When contributing to this repository, please first discuss the change you wish to make via email  
-  with the owners of this repository before making a pull request<br>
+with the owners of this repository before making a pull request  
 <p align="right">(<a href="#top">back to top</a>)</p>
   
 ## Tests
-No test files yet, check again soon<br>
+No test yet, check again soon<br>
 <p align="right">(<a href="#top">back to top</a>)</p>
   
 ## Links
-Published Link: https://excellent-note-taker.herokuapp.com/<br>
+Published Link: https://excellent-note-taker.herokuapp.com/  
+Github link: https://github.com/Pilot67/express-notetaker/  
 <p align="right">(<a href="#top">back to top</a>)</p>
   
 ## Questions
